@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>MLV Flix | Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- fontes externas ↓ -->
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- fontes externas ↑ -->
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!--Menu ↓ -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-primary text-uppercase"><i class="fa fa-code me-3"></i>MLV<span
+                    class="branco">Flix</span></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#banner" class="nav-item nav-link active">Home</a>
+                <a href="#filmes" class="nav-item nav-link">Filmes</a>
+                <a href="#sobre-nos" class="nav-item nav-link">Sobre Nós</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!--Menu ↑ -->
+
+    <!-- Banner ↓ -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" id="banner" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/banner.jpg" alt="Banner">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">O maior site
+                                gratuito de filmes e séries</h1>
+                            <button type="button" class="btn btn-danger btn-lg" href="#explorar"><a href="#explorar" style="color: white;">Explorar</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/banner2.jpg" alt="Segundo Banner">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">
+                                Filmes, séries e muito mais. Sem limites.
+                            </h1>
+                            <div class="input-group mb-3">
+                                <button class="btn btn-danger btn-lg " type="button" id="button-addon1">Vamos
+                                    Lá</button>
+                                <input type="text" class="form-control" placeholder="Email"
+                                    aria-label="Example text with button addon" aria-describedby="button-addon1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Banner ↑ -->
+
+        <!-- Filmes ↓ -->
+        <div class="container-xxl py-5" id="filmes">
+            <div class="container" id="explorar">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;" >
+                    <h1 class="d-inline-block bg-secondary text-primary py-1 px-4 ">Filmes <span class="text-white">/
+                            Series</span> <i class="bi bi-film text-light"></i></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                            <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <img class="img-fluid"
+                                    src="img/doutor-estranho-no-multiverso-da-loucura-promete-mudancas-radicais-na-fase-4-do-universo-cinematografico-marvel-1649187391418_v2_900x506.jpg.webp"
+                                    alt="DrEstranhos2">
+                            </div>
+                            <div class="ps-4">
+                                <h3 class="text-uppercase mb-3">Dr. Estranho 2</h3>
+                                <p> O Personagem atravessa as realidades alternativas incompreensíveis e perigosas do
+                                    Multiverso para enfrentar um novo e misterioso adversário.</p>
+                            </div>
+                            <a class="btn btn-square" href="drestranho.html"><i class="fa fa-plus text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                            <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <img class="img-fluid" src="img/peaky conteudo.jpg" alt="PeakyBlinders">
+                            </div>
+                            <div class="ps-4">
+                                <h3 class="text-uppercase mb-3">Peaky Blinders</h3>
+                                <p> Uma notória gangue da Inglaterra de 1919 é liderada pelo cruel Tommy Shelby, um
+                                    criminoso disposto a subir na vida a qualquer preço.
+                                </p>
+                            </div>
+                            <a class="btn btn-square" href="Peaky Blinders.html"><i
+                                    class="fa fa-plus text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                            <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <img class="img-fluid" src="img/tartaruga-ninja-filme.jpg" alt="">
+                            </div>
+                            <div class="ps-4">
+                                <h3 class="text-uppercase mb-3">As Tartarugas Ninjas </h3>
+                                <p>Afetados por uma substância radioativa, um grupo de tartarugas cresce anormalmente,
+                                    ganha força e conhecimento.</p>
+                            </div>
+                            <a class="btn btn-square" href="tartarugas.html"><i class="fa fa-plus text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                            <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <img class="img-fluid" src="img/efeitoborboletabanner.jpg" alt="capa DVD efeito borboleta">
+                            </div>
+                            <div class="ps-4">
+                                <h3 class="text-uppercase mb-3">Efeito Borboleta</h3>
+                                <p> Evan (Ashton Kutcher) é um jovem que luta para esquecer fatos de sua infância. Para
+                                    tanto ele decide realizar uma regressão onde volta também fisicamente ao seu corpo
+                                    de criança, tendo condições de alterar seu próprio passado.
+                                </p>
+                            </div>
+                            <a class="btn btn-square" href="borboleta.html"><i class="fa fa-plus text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                            <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <img class="img-fluid" src="img/eternos.jpg" alt="Eternos">
+                            </div>
+                            <div class="ps-4">
+                                <h3 class="text-uppercase mb-3">Eternos</h3>
+                                <p>Os Eternos são uma raça de seres imortais que viveram durante a antiguidade da Terra,
+                                    moldando sua história e suas civilizações enquanto batalhavam os malignos Deviantes.
+                                </p>
+                            </div>
+                            <a class="btn btn-square" href="eternos.html"><i class="fa fa-plus text-primary"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                            <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <img class="img-fluid" src="img/0000603_princesa-barbie-dreamtopia.png" alt="">
+                            </div>
+                            <div class="ps-4">
+                                <h3 class="text-uppercase mb-3">Barbie</h3>
+                                <p>No mundo mágico das Barbies, "Barbieland", uma das bonecas começa a perceber que não
+                                    se encaixa como as outras</p>
+                            </div>
+                            <a class="btn btn-square" href="barbie.html"><i class="fa fa-plus text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Filmes ↑ -->
+
+        <!-- Sobre Nós ↓ -->
+        <div class="container-xxl py-5" id="sobre-nos">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="d-inline-block bg-secondary text-primary py-1 px-4">Sobre Nós</h1>
+                    <h2 class="text-uppercase">Nossa Equipe</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/1601762267286.jfif" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-square" href="https://www.linkedin.com/in/marcos-junio-bb17941b7/"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square" href="https://github.com/marcosjunio89" target="_blank"><i
+                                            class="fab fa-github"></i></a>
+                                    <a class="btn btn-square" href="https://www.instagram.com/junio.125/"
+                                        target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h5 class="text-uppercase">Marcos Nascimento</h5>
+                                <span class="text-primary">Desenvolvedor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/1655412875342.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-square" href="https://www.linkedin.com/in/lucas-santos-070a301a1/"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square" href="https://github.com/LucasSantosp09"
+                                        target="_blank"><i class="fab fa-github"></i></a>
+                                    <a class="btn btn-square" href="https://www.instagram.com/lucasspereira19/"
+                                        target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h5 class="text-uppercase">Lucas Santos</h5>
+                                <span class="text-primary">Desenvolvedor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item">
+                            <div class="team-img position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/1645798774248.jpg" alt="">
+                                <div class="team-social">
+                                    <a class="btn btn-square"
+                                        href="https://www.linkedin.com/in/vinicius-dos-santos-viana/" target="_blank"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-square" href="https://github.com/Vini-Viana" target="_blank"><i
+                                            class="fab fa-github"></i></a>
+                                    <a class="btn btn-square" href="https://www.instagram.com/viniciustaxa/"
+                                        target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h5 class="text-uppercase">Vinícius Viana</h5>
+                                <span class="text-primary">Desenvolvedor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sobre Nós ↑ -->
+
+        <!-- Avaliações ↓ -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="d-inline-block bg-secondary text-primary py-1 px-4">Avaliações</h1>
+                    <h2 class="text-uppercase">Veja o que nossos espectadores dizem!</h2>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item text-center"
+                        data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                        <h4 class="text-uppercase">Cristiano Ronaldo</h4>
+                        <p class="text-primary">Dr. Estanho 2</p>
+                        <span class="fs-5">Doutor Estranho se torna memorável ao usar a fórmula Marvel aprimorada. Um
+                            filme muito abrangente do humor ao intelecto, com a mesclagem de temas usada, até sua avó
+                            ficará impressionada ao assistir, principalmente pelos efeitos visuais incríveis, o que
+                            poderá trazer o primeiro Oscar para a Marvel..</span>
+                    </div>
+                    <div class="testimonial-item text-center"
+                        data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                        <h4 class="text-uppercase">Neymar Junior</h4>
+                        <p class="text-primary">Eternos</p>
+                        <span class="fs-5">Poético e diferente de tudo que a marvel entregou até aqui, pode parecer um
+                            pouco lento mas cada cena faz sentido para demonstrar como cada eternos lidou com as
+                            diversas características que abrangem a humanidade. Vale muito a experiência!.</span>
+                    </div>
+                    <div class="testimonial-item text-center"
+                        data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
+                        <h4 class="text-uppercase">Kylian Mbappé</h4>
+                        <p class="text-primary">Tartarugas Ninja</p>
+                        <span class="fs-5">Quem é fã das tartarugas ninja como eu, que acompanhou o desenho dos anos 90
+                            não pode perder este filme.
+                            Com efeitos impressionantes e uma história muito bem feita o filme se destaca de todos os
+                            outros já criados.
+                            Com piadas da cultura pop muito bem colocadas em um roteiro bem amarrado, o filme gera quase
+                            100 minutos de cenas engraçadas, tornando os efeitos especiais um belo espetáculo à parte.
+                            Falando em efeitos Michel Bay dá um espetáculo ao empregar bem o recurso de 3D no já muito
+                            bonito filme dos mutantes. Quem puder ver o filme em 3D sentirá emoção em dobro pelas belas
+                            cenas de ação..</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Avaliações ↑ -->
+
+        <!-- Modal ↓ -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastra-se</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="mb-0 text-primary text-uppercase text-center"><i class="fa fa-code me-3"></i>MLV<span
+                                class="text-dark">Flix</span></h1>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"><strong>Email</strong> </label>
+                            <input type="email" class="form-control" id="email" name="email" required
+                                style="border-radius: 12px ; border: 2px solid black;">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"><strong>Senha</strong> </label>
+                            <input type="password" class="form-control" id="senha" name="senha" required
+                                style="border-radius: 12px ; border: 2px solid black;">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                            style="border-radius: 12px ;">Fechar</button>
+                        <button type="button" class="btn btn-primary" style="border-radius: 12px ;">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal ↑ -->
+</body>
+
+<footer>
+    <!-- Rodapé ↓ -->
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Marcos Junio</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="bi bi-github text-primary"></span>
+                        </div>
+                        <a href="https://github.com/marcosjunio89" target="_blank"><span>GitHub</span></a>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="bi bi-linkedin text-primary"></span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/marcos-junio-bb17941b7/"
+                            target="_blank"><span>LinkedIn</span></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>nascimentojunio1999@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Lucas Santos</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="bi bi-github text-primary"></span>
+                        </div>
+                        <a href="https://github.com/LucasSantosp09" target="_blank"><span>GitHub</span></a>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="bi bi-linkedin text-primary"></span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/lucas-santos-070a301a1//"
+                            target="_blank"><span>LinkedIn</span></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>lucassantos.p09@gmail.com</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Vinícius Viana</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="bi bi-github text-primary"></span>
+                        </div>
+                        <a href="https://github.com/Vini-Viana" target="_blank"><span>GitHub</span></a>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="bi bi-linkedin text-primary"></span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/vinicius-dos-santos-viana/"
+                            target="_blank"><span>LinkedIn</span></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>viniciusvianasp@hotmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-12 text-center text-md-center mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Checkpoint 2 desenvolvido em 2022</a>, Todos os
+                        direitos Reservados.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rodapé ↑ -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</footer>
+
+</html>
